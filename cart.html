@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Cart — Nostra</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#f3efe6] text-[#16181d] overflow-x-hidden">
+
+  <header class="bg-[#f3efe6] border-b border-[#dcd6c8]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between">
+      <a href="index.html" class="text-lg sm:text-xl font-bold tracking-tight">Nostra</a>
+      <nav class="flex items-center gap-4 sm:gap-8 text-sm">
+        <a href="index.html" class="hover:text-[#c65b3f]">Home</a>
+        <a href="collections.html" class="hover:text-[#c65b3f]">Collections</a>
+        <a href="contact.html" class="hover:text-[#c65b3f]">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+    <h1 class="text-xl sm:text-2xl font-display font-bold mb-6 sm:mb-8">Your Cart</h1>
+    <div id="cart-items" class="space-y-4 sm:space-y-5"></div>
+    <div id="cart-empty" class="hidden text-center py-16 text-[#5b5648] text-sm sm:text-base">
+      Your cart is empty — <a href="collections.html" class="underline">browse the collection</a>.
+    </div>
+    <div id="cart-summary" class="mt-8 sm:mt-10 border-t border-[#dcd6c8] pt-5 sm:pt-6 flex items-center justify-between">
+      <span class="text-base sm:text-lg font-semibold">Total</span>
+      <span id="cart-total" class="text-base sm:text-lg font-semibold"></span>
+    </div>
+  </main>
+
+  <footer class="bg-[#171d29] text-white/70 text-center text-xs py-6 mt-6 px-4">© 2026 Nostra. All rights reserved.</footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

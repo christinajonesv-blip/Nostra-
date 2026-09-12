@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product — Nostra</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#f3efe6] text-[#16181d] overflow-x-hidden">
+
+  <div id="promo-bar" class="bg-[#16181d] text-white text-xs sm:text-sm text-center py-2.5 px-8 sm:px-10 relative">
+    <span>Sign Up and <strong class="font-semibold">GET 20% OFF</strong> for your first Order</span>
+    <button id="promo-close" aria-label="Dismiss" class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white">✕</button>
+  </div>
+
+  <header class="bg-[#f3efe6] border-b border-[#dcd6c8]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between">
+      <a href="index.html" class="text-lg sm:text-xl font-bold tracking-tight">Nostra</a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="index.html" class="hover:text-[#c65b3f]">Home</a>
+        <a href="index.html#new-arrival" class="hover:text-[#c65b3f]">New Arrival</a>
+        <a href="index.html#most-wanted" class="hover:text-[#c65b3f]">Most Wanted</a>
+        <a href="collections.html" class="hover:text-[#c65b3f]">Collections</a>
+        <a href="contact.html" class="hover:text-[#c65b3f]">Contact Us</a>
+      </nav>
+      <div class="flex items-center gap-3 sm:gap-4">
+        <a href="cart.html" aria-label="Cart" class="relative hover:text-[#c65b3f]">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span data-cart-count class="hidden absolute -top-2 -right-2 bg-[#c65b3f] text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">0</span>
+        </a>
+        <button id="nav-toggle" class="md:hidden" aria-label="Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="md:hidden px-4 sm:px-6 flex flex-col gap-1 text-sm pb-2">
+      <a href="index.html" class="py-2">Home</a>
+      <a href="index.html#new-arrival" class="py-2">New Arrival</a>
+      <a href="index.html#most-wanted" class="py-2">Most Wanted</a>
+      <a href="collections.html" class="py-2">Collections</a>
+      <a href="contact.html" class="py-2">Contact Us</a>
+    </nav>
+  </header>
+
+  <main id="product-root" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 grid md:grid-cols-2 gap-6 md:gap-12">
+    <!-- filled by product.js -->
+  </main>
+
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16">
+    <h2 class="text-lg sm:text-xl font-display font-bold mb-5 sm:mb-6">You may also like</h2>
+    <div id="related-grid" class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5"></div>
+  </section>
+
+  <footer class="bg-[#171d29] text-white/70 text-center text-xs py-6 mt-6 sm:mt-10 px-4">© 2026 Nostra. All rights reserved.</footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>
