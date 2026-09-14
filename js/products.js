@@ -15,7 +15,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["casual"],
     color: ["white", "green"],
-    image: "https://picsum.photos/seed/nostra-floral/500/620",
+    image: "images/photo-1511039912745-8bfa0bc56aeb.avif",
     badge: null,
     description: "A lightweight cotton-blend shirt printed with a hand-painted floral motif. Relaxed fit with a soft collar that layers well over a tee."
   },
