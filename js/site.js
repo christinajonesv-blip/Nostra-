@@ -2,6 +2,25 @@
 // Nostra – site-wide behaviour shared by every page
 // ---------------------------------------------------------
 
+/* ---------- Dark mode ---------- */
+function initTheme() {
+  const toggle = document.getElementById("theme-toggle");
+  if (!toggle) return;
+
+  function apply(theme) {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+    toggle.textContent = theme === "dark" ? "☀️" : "🌙";
+  }
+
+  apply(localStorage.getItem("nostra-theme") || "light");
+
+  toggle.addEventListener("click", () => {
+    const next = document.documentElement.classList.contains("dark") ? "light" : "dark";
+    localStorage.setItem("nostra-theme", next);
+    apply(next);
+  });
+}
+
 /* ---------- Promo bar ---------- */
 function initPromoBar() {
   const bar = document.getElementById("promo-bar");
@@ -18,15 +37,31 @@ function initPromoBar() {
   });
 }
 
-/* ---------- Mobile nav ---------- */
+/* ---------- Mobile nav (right-side drawer) ---------- */
 function initMobileNav() {
   const toggle = document.getElementById("nav-toggle");
-  const menu = document.getElementById("mobile-menu");
-  if (!toggle || !menu) return;
-  toggle.addEventListener("click", () => {
-    const isOpen = menu.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  });
+  const drawer = document.getElementById("mobile-drawer");
+  const backdrop = document.getElementById("mobile-backdrop");
+  const closeBtn = document.getElementById("drawer-close");
+  if (!toggle || !drawer || !backdrop) return;
+
+  function open() {
+    drawer.classList.add("is-open");
+    backdrop.classList.add("is-open");
+    toggle.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+  }
+  function close() {
+    drawer.classList.remove("is-open");
+    backdrop.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  }
+
+  toggle.addEventListener("click", open);
+  backdrop.addEventListener("click", close);
+  if (closeBtn) closeBtn.addEventListener("click", close);
+  drawer.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
 }
 
 /* ---------- Cart + Wishlist (localStorage) ---------- */
@@ -112,7 +147,7 @@ function showToast(message) {
     toast = document.createElement("div");
     toast.id = "toast";
     toast.className =
-      "fixed bottom-6 left-1/2 -translate-x-1/2 bg-[#16181d] text-white text-sm px-5 py-3 rounded-full shadow-lg opacity-0 pointer-events-none z-50";
+      "fixed bottom-6 left-1/2 -translate-x-1/2 bg-[#16181d] text-white text-sm px-5 py-3 rounded-full shadow-lg opacity-0 pointer-events-none z-[60]";
     document.body.appendChild(toast);
   }
   toast.textContent = message;
@@ -123,11 +158,24 @@ function showToast(message) {
   }, 1800);
 }
 
+/* ---------- Newsletter ---------- */
+function initNewsletter() {
+  const form = document.getElementById("newsletter-form");
+  if (!form) return;
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    form.reset();
+    showToast("Subscribed!");
+  });
+}
+
 /* ---------- Boot ---------- */
 document.addEventListener("DOMContentLoaded", () => {
+  initTheme();
   initPromoBar();
   initMobileNav();
   updateCartBadge();
   initWishlistButtons();
   initAddToCartButtons();
+  initNewsletter();
 });
