@@ -4,11 +4,13 @@
 
 function cartRow(item, product) {
   return `
-    <div class="flex items-center gap-3 sm:gap-4 bg-white/40 rounded-lg p-3">
-      <img src="${product.image}" alt="${product.name}" class="w-16 h-20 sm:w-20 sm:h-24 object-cover rounded shrink-0" />
+    <div class="flex items-center gap-3 sm:gap-4 bg-white/40 dark:bg-white/5 rounded-lg p-3">
+      <a href="product.html?id=${product.id}" class="shrink-0">
+        <img src="${product.image}" alt="${product.name}" class="w-16 h-20 sm:w-20 sm:h-24 object-cover rounded" />
+      </a>
       <div class="flex-1 min-w-0">
         <p class="font-medium text-sm sm:text-base truncate">${product.name}</p>
-        <p class="text-xs sm:text-sm text-[#5b5648]">Size ${item.size} · Qty ${item.qty}</p>
+        <p class="text-xs sm:text-sm text-[#5b5648] dark:text-[#a3a099]">Size ${item.size} · Qty ${item.qty}</p>
       </div>
       <p class="font-medium text-sm sm:text-base shrink-0">${formatPrice(product.price * item.qty)}</p>
       <button data-remove="${product.id}" data-size="${item.size}" class="text-[#a39d8e] hover:text-[#c65b3f] text-xs sm:text-sm ml-1 sm:ml-2 shrink-0">Remove</button>
