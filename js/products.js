@@ -1,5 +1,5 @@
 // ---------------------------------------------------------
-// Nostra – shared data
+// Nostra – shared data (Updated with matching product images)
 // Every page reads from this single source of truth.
 // ---------------------------------------------------------
 
@@ -15,7 +15,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["casual"],
     color: ["white", "green"],
-    image: "https://picsum.photos/seed/nostra-floral/500/620",
+    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "A lightweight cotton-blend shirt printed with a hand-painted floral motif. Relaxed fit with a soft collar that layers well over a tee."
   },
@@ -29,7 +29,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["formal"],
     color: ["white"],
-    image: "https://picsum.photos/seed/nostra-trouser/500/620",
+    image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "Sharp, straight-leg trousers in a breathable weave — built for the office and easy to dress down after hours."
   },
@@ -43,7 +43,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["casual"],
     color: ["blue"],
-    image: "https://picsum.photos/seed/nostra-denim/500/620",
+    image: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "A mid-weight denim overshirt with a boxy silhouette and dual chest pockets. Layer it open over plain tees."
   },
@@ -57,7 +57,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["formal"],
     color: ["white"],
-    image: "https://picsum.photos/seed/nostra-jacket/500/620",
+    image: "https://images.unsplash.com/photo-1548883354-7622d03aca27?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "A utilitarian field jacket with four flap pockets and a corozo-button placket, finished in brushed cotton twill."
   },
@@ -73,7 +73,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["white"],
-    image: "https://picsum.photos/seed/nostra-hoodie/500/620",
+    image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500&auto=format&fit=crop&q=80",
     badge: "sale",
     description: "Brushed fleece hoodie in ash grey with a kangaroo pocket — soft, roomy, and built for everyday wear."
   },
@@ -87,7 +87,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["green"],
-    image: "https://picsum.photos/seed/nostra-cargo/500/620",
+    image: "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?w=500&auto=format&fit=crop&q=80",
     badge: "sale",
     description: "Tapered cargo joggers with utility pockets and an elastic cuff — comfortable enough for all-day wear."
   },
@@ -101,7 +101,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["green", "white"],
-    image: "https://picsum.photos/seed/nostra-pullover/500/620",
+    image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500&auto=format&fit=crop&q=80",
     badge: "sale",
     description: "A half-zip utility pullover in a heavyweight cotton blend, with a chest pocket and ribbed cuffs."
   },
@@ -115,7 +115,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["formal"],
     color: ["blue"],
-    image: "https://picsum.photos/seed/nostra-bomber/500/620",
+    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&auto=format&fit=crop&q=80",
     badge: "sale",
     description: "A classic bomber cut in a soft-touch shell, ribbed hem and cuffs, fully lined for cooler evenings."
   },
@@ -129,7 +129,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["white"],
-    image: "https://picsum.photos/seed/nostra-tee/500/620",
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&auto=format&fit=crop&q=80",
     badge: "sale",
     description: "100% cotton tee with a subtle front print — the everyday staple that layers under anything."
   },
@@ -143,7 +143,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["blue"],
-    image: "https://picsum.photos/seed/nostra-ziphoodie/500/620",
+    image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=500&auto=format&fit=crop&q=80",
     badge: "sale",
     description: "Full-zip hoodie in brushed fleece with a two-way zip and dropped shoulder seams."
   },
@@ -157,7 +157,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["formal"],
     color: ["red", "white"],
-    image: "https://picsum.photos/seed/nostra-block/500/620",
+    image: "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=500&auto=format&fit=crop&q=80",
     badge: "sale",
     description: "Short-sleeve shirt in a hand block-print pattern, cut for a relaxed camp-collar fit."
   },
@@ -171,12 +171,12 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["formal"],
     color: ["green"],
-    image: "https://picsum.photos/seed/nostra-knit/500/620",
+    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&auto=format&fit=crop&q=80",
     badge: "sale",
     description: "A fine-gauge merino-blend sweater with a crew neck — dresses up or down with equal ease."
   },
 
-  // ---- Collection extras (occasion / color variety for filtering) ----
+  // ---- Collection extras ----
   {
     id: "p13",
     name: "Beach Print Shirt",
@@ -187,7 +187,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["beach"],
     color: ["blue", "white"],
-    image: "https://picsum.photos/seed/nostra-beachprint/500/620",
+    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "Loose, breathable and quick-drying — designed for salt air and long afternoons by the water."
   },
@@ -201,7 +201,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["beach"],
     color: ["blue", "white"],
-    image: "https://picsum.photos/seed/nostra-coastal/500/620",
+    image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "Fine vertical stripes on a soft cotton-linen blend, cut with a relaxed body and short sleeve."
   },
@@ -215,7 +215,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["formal"],
     color: ["white"],
-    image: "https://picsum.photos/seed/nostra-white/500/620",
+    image: "https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "A wardrobe staple woven from brushed oxford cotton, tailored with a clean point collar."
   },
@@ -229,7 +229,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["red", "white"],
-    image: "https://picsum.photos/seed/nostra-rusty/500/620",
+    image: "https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "An unlined overshirt in a heavy cotton canvas, patch pockets front and back."
   },
@@ -243,57 +243,8 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["formal"],
     color: ["red"],
-    image: "https://picsum.photos/seed/nostra-partyfloral/500/620",
+    image: "https://images.unsplash.com/photo-1589571894960-20bbe2828d1b?w=500&auto=format&fit=crop&q=80",
     badge: null,
     description: "A statement short-sleeve shirt in a bold floral print — the one to reach for when the occasion calls for more."
   }
 ];
-
-const CATEGORIES = [
-  {
-    name: "Shirts",
-    tagline: "Casual to classy",
-    image: "https://picsum.photos/seed/nostra-cat-shirts/500/600",
-    link: "collections.html"
-  },
-  {
-    name: "Bottoms",
-    tagline: "Comfort in every mode",
-    image: "https://picsum.photos/seed/nostra-cat-bottoms/500/600",
-    link: "collections.html"
-  },
-  {
-    name: "Layers",
-    tagline: "Everyday essentials",
-    image: "https://picsum.photos/seed/nostra-cat-layers/500/600",
-    link: "collections.html"
-  },
-  {
-    name: "Hoodies",
-    tagline: "Comfort meets style",
-    image: "https://picsum.photos/seed/nostra-cat-hoodies/500/600",
-    link: "collections.html"
-  }
-];
-
-const BRANDS = [
-  { name: "Aeon", icon: "circle", letter: "A" },
-  { name: "Solstice", icon: "sun" },
-  { name: "Ridgeline", icon: "mountain" },
-  { name: "Northfolk", icon: "leaf" },
-  { name: "Halcyon", icon: "circle", letter: "H" }
-];
-
-function getProductById(id) {
-  return PRODUCTS.find((p) => p.id === id);
-}
-
-function formatPrice(value) {
-  return "₹" + value.toLocaleString("en-IN");
-}
-
-function renderStars(rating) {
-  const full = "★".repeat(rating);
-  const empty = "☆".repeat(5 - rating);
-  return `<span class="text-[#c65b3f] tracking-tight" aria-label="${rating} out of 5 stars">${full}<span class="text-[#c9c2b2] dark:text-[#4a4c54]">${empty}</span></span>`;
-}
