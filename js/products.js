@@ -15,7 +15,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["casual"],
     color: ["white", "green"],
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1511039912745-8bfa0bc56aeb.avif",
     badge: null,
     description: "A lightweight cotton-blend shirt printed with a hand-painted floral motif. Relaxed fit with a soft collar that layers well over a tee."
   },
@@ -29,7 +29,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["formal"],
     color: ["white"],
-    image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=500&auto=format&fit=crop&q=80",
+    image: "images/trosers.jpg",
     badge: null,
     description: "Sharp, straight-leg trousers in a breathable weave — built for the office and easy to dress down after hours."
   },
@@ -43,7 +43,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["casual"],
     color: ["blue"],
-    image: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500&auto=format&fit=crop&q=80",
+    image:"images/premium_photo-1727942420153-8573424d2a83.avif",
     badge: null,
     description: "A mid-weight denim overshirt with a boxy silhouette and dual chest pockets. Layer it open over plain tees."
   },
@@ -57,7 +57,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["formal"],
     color: ["white"],
-    image: "https://images.unsplash.com/photo-1548883354-7622d03aca27?w=500&auto=format&fit=crop&q=80",
+    image: "images/premium_photo-1670623042512-1a5ecebc3f42.avif",
     badge: null,
     description: "A utilitarian field jacket with four flap pockets and a corozo-button placket, finished in brushed cotton twill."
   },
@@ -73,7 +73,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["white"],
-    image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1564557287817-3785e38ec1f5.avif",
     badge: "sale",
     description: "Brushed fleece hoodie in ash grey with a kangaroo pocket — soft, roomy, and built for everyday wear."
   },
@@ -87,7 +87,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["green"],
-    image: "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1789110519605-c5ceeeab5a0f.avif",
     badge: "sale",
     description: "Tapered cargo joggers with utility pockets and an elastic cuff — comfortable enough for all-day wear."
   },
@@ -101,7 +101,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["green", "white"],
-    image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1527719197793-6b777854108d.avif",
     badge: "sale",
     description: "A half-zip utility pullover in a heavyweight cotton blend, with a chest pocket and ribbed cuffs."
   },
@@ -115,7 +115,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["formal"],
     color: ["blue"],
-    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1544022613-e87ca75a784a.avif",
     badge: "sale",
     description: "A classic bomber cut in a soft-touch shell, ribbed hem and cuffs, fully lined for cooler evenings."
   },
@@ -129,7 +129,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["white"],
-    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1532578941548-30cbde3ad4b1.avif",
     badge: "sale",
     description: "100% cotton tee with a subtle front print — the everyday staple that layers under anything."
   },
@@ -143,7 +143,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["blue"],
-    image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1745724014371-95d6f73499dc.avif",
     badge: "sale",
     description: "Full-zip hoodie in brushed fleece with a two-way zip and dropped shoulder seams."
   },
@@ -157,7 +157,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["formal"],
     color: ["red", "white"],
-    image: "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=500&auto=format&fit=crop&q=80",
+    image: "images/istockphoto-2274254136-1024x1024.avif",
     badge: "sale",
     description: "Short-sleeve shirt in a hand block-print pattern, cut for a relaxed camp-collar fit."
   },
@@ -171,7 +171,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["formal"],
     color: ["green"],
-    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1631541909061-71e349d1f203.avif",
     badge: "sale",
     description: "A fine-gauge merino-blend sweater with a crew neck — dresses up or down with equal ease."
   },
@@ -187,7 +187,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["beach"],
     color: ["blue", "white"],
-    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1726741692873-b8a95b0163aa.avif",
     badge: null,
     description: "Loose, breathable and quick-drying — designed for salt air and long afternoons by the water."
   },
@@ -201,7 +201,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["beach"],
     color: ["blue", "white"],
-    image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1726741692873-b8a95b0163aa.avif",
     badge: null,
     description: "Fine vertical stripes on a soft cotton-linen blend, cut with a relaxed body and short sleeve."
   },
@@ -215,7 +215,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["formal"],
     color: ["white"],
-    image: "https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1621072156002-e2fccdc0b176.avif",
     badge: null,
     description: "A wardrobe staple woven from brushed oxford cotton, tailored with a clean point collar."
   },
@@ -229,7 +229,7 @@ const PRODUCTS = [
     arrival: "old",
     occasion: ["casual"],
     color: ["red", "white"],
-    image: "https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1540907389453-f0e0a8dc70eb.avif",
     badge: null,
     description: "An unlined overshirt in a heavy cotton canvas, patch pockets front and back."
   },
@@ -243,7 +243,7 @@ const PRODUCTS = [
     arrival: "new",
     occasion: ["formal"],
     color: ["red"],
-    image: "https://images.unsplash.com/photo-1589571894960-20bbe2828d1b?w=500&auto=format&fit=crop&q=80",
+    image: "images/photo-1768289223084-1b57698e9f3e.avif",
     badge: null,
     description: "A statement short-sleeve shirt in a bold floral print — the one to reach for when the occasion calls for more."
   }
